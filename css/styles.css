@@ -158,6 +158,7 @@ p {
   margin-bottom: 1rem;
 }
 
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -4666,6 +4667,45 @@ textarea.form-control-lg {
   }
 }
 
+.projectLink:hover {
+    /*background-image: url('../assets/img/juega.png');*/
+}
+
+.figure {
+    position: relative;
+}
+
+    .figure img.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+
+    .figure:hover img.image-hover {
+        opacity: 1;
+    }
+
+.cardGalaxy {
+    position: relative;
+}
+
+.cardGalaxy:hover .img-bottom {
+    display: none;
+}
+.cardGalaxy .img-top {
+    display: none;
+    z-index: 99;
+}
+
+.cardGalaxy:hover .img-top {
+    display: inline;
+
+}
 .accordion-button {
   position: relative;
   display: flex;
